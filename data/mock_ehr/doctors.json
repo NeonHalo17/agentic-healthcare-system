@@ -1,0 +1,47 @@
+[
+    {
+        "doctor_id": "D001",
+        "name": "Dr. Anil Gupta",
+        "specialty": "Nephrologist",
+        "available_slots": [
+            "2026-06-25 14:00",
+            "2026-06-25 10:00"
+        ]
+    },
+    {
+        "doctor_id": "D002",
+        "name": "Dr. Priya Mehta",
+        "specialty": "Endocrinologist",
+        "available_slots": [
+            "2026-06-25 11:00",
+            "2026-06-26 09:00"
+        ]
+    },
+    {
+        "doctor_id": "D003",
+        "name": "Dr. Rohit Khanna",
+        "specialty": "Cardiologist",
+        "available_slots": [
+            "2026-06-26 10:30",
+            "2026-06-26 15:30"
+        ]
+    },
+    {
+        "doctor_id": "D004",
+        "name": "Dr. Kavita Rao",
+        "specialty": "Pulmonologist",
+        "available_slots": [
+            "2026-06-27 09:30",
+            "2026-06-27 13:30"
+        ]
+    },
+    {
+        "doctor_id": "D005",
+        "name": "Dr. Sameer Jain",
+        "specialty": "General Physician",
+        "available_slots": [
+            "2026-06-25 09:00",
+            "2026-06-25 16:00"
+        ]
+    }
+]

@@ -1,0 +1,63 @@
+[
+    {
+        "patient_id": "P001",
+        "name": "Rajesh Sharma",
+        "age": 70,
+        "gender": "Male",
+        "diagnosis": "Chronic Kidney Disease",
+        "treatment": "Dialysis",
+        "allergies": [
+            "Penicillin"
+        ],
+        "last_visit": "2026-05-01",
+        "notes": "fatigue and nausea"
+    },
+    {
+        "patient_id": "P002",
+        "name": "Sunita Patel",
+        "age": 58,
+        "gender": "Female",
+        "diagnosis": "Type 2 Diabetes",
+        "treatment": "Metformin",
+        "allergies": [],
+        "last_visit": "2026-06-10",
+        "notes": "Blood glucose moderately controlled."
+    },
+    {
+        "patient_id": "P003",
+        "name": "Amit Verma",
+        "age": 45,
+        "gender": "Male",
+        "diagnosis": "Hypertension",
+        "treatment": "Amlodipine",
+        "allergies": [
+            "Sulfa Drugs"
+        ],
+        "last_visit": "2026-04-22",
+        "notes": "Monitor blood pressure monthly."
+    },
+    {
+        "patient_id": "P004",
+        "name": "Neha Kapoor",
+        "age": 32,
+        "gender": "Female",
+        "diagnosis": "Asthma",
+        "treatment": "Inhaled Corticosteroids",
+        "allergies": [
+            "Dust"
+        ],
+        "last_visit": "2026-06-01",
+        "notes": "Symptoms worsen during seasonal changes."
+    },
+    {
+        "patient_id": "P005",
+        "name": "Vikram Singh",
+        "age": 67,
+        "gender": "Male",
+        "diagnosis": "Coronary Artery Disease",
+        "treatment": "Aspirin Therapy",
+        "allergies": [],
+        "last_visit": "2026-05-15",
+        "notes": "Scheduled for cardiology review."
+    }
+]

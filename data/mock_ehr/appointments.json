@@ -1,0 +1,37 @@
+[
+    {
+        "appointment_id": "A001",
+        "patient_id": "P001",
+        "doctor_id": "D001",
+        "appointment_date": "2026-05-01 11:00",
+        "status": "Completed"
+    },
+    {
+        "appointment_id": "A002",
+        "patient_id": "P002",
+        "doctor_id": "D002",
+        "appointment_date": "2026-06-10 10:00",
+        "status": "Completed"
+    },
+    {
+        "appointment_id": "A003",
+        "patient_id": "P003",
+        "doctor_id": "D005",
+        "appointment_date": "2026-05-20 09:00",
+        "status": "Completed"
+    },
+    {
+        "appointment_id": "A004",
+        "patient_id": "P004",
+        "doctor_id": "D004",
+        "appointment_date": "2026-06-01 14:00",
+        "status": "Completed"
+    },
+    {
+        "appointment_id": "A005",
+        "patient_id": "P005",
+        "doctor_id": "D003",
+        "appointment_date": "2026-06-28 10:30",
+        "status": "Scheduled"
+    }
+]

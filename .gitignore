@@ -1,0 +1,21 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# VSCode
+.vscode/
+
+# Environment
+.env
+
+# Ollama cache (if applicable)
+*.gguf
+
+# OS files
+.DS_Store
+Thumbs.db
