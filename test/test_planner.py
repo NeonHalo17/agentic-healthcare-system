@@ -3,7 +3,7 @@ from agents.planner import Planner
 planner = Planner()
 
 query = """
-My father has chronic kidney disease.
+Rajesh Sharma has chronic kidney disease.
 Book a nephrologist appointment.
 Also summarize latest treatment methods.
 """

@@ -36,6 +36,8 @@ class PatientTool:
     # Get patient records based on patient name
     def get_patient_by_name(self, name):
         # Call _load_data functino and the patient data as a json
+        if not name:
+            return None
         patients = self._load_data()
         # Iterate over each patient in the data
         for patient in patients:

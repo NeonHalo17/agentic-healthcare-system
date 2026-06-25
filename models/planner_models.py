@@ -13,4 +13,6 @@ class Task(str, Enum):
 class Plan(BaseModel):
     tasks: List[Task]
     doctor_specialty: Optional[str] = None
+    disease_name: Optional[str] = None
+    patient_name: Optional[str] = None
     update_note: Optional[str] = None

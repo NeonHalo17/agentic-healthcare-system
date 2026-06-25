@@ -1,0 +1,58 @@
+{
+    "default": {
+        "patient_name": "Rajesh Sharma",
+        "history": [
+            {
+                "query": "Book a nephrologist appointment for Rajesh Sharma",
+                "response": {
+                    "available_slots": [
+                        {
+                            "doctor_id": "D001",
+                            "doctor_name": "Dr. Anil Gupta",
+                            "specialty": "Nephrologist",
+                            "slot": "2026-06-25 14:00"
+                        },
+                        {
+                            "doctor_id": "D001",
+                            "doctor_name": "Dr. Anil Gupta",
+                            "specialty": "Nephrologist",
+                            "slot": "2026-06-25 10:00"
+                        }
+                    ]
+                }
+            },
+            {
+                "query": "Summarize latest treatment methods for chronic kidney disease",
+                "response": {
+                    "medical_information": [
+                        {
+                            "title": "CKD Treatment Guidelines",
+                            "content": "\n                    Recent treatments include\n                    SGLT2 inhibitors,\n                    dialysis optimization,\n                    kidney transplantation.\n                    "
+                        },
+                        {
+                            "title": "Chronic Kidney Disease Research",
+                            "content": "\n                    Early diagnosis and\n                    blood pressure control\n                    remain critical.\n                    "
+                        }
+                    ]
+                }
+            },
+            {
+                "query": "Update Rajesh Sharma record with fatigue and nausea",
+                "response": {
+                    "updated_notes": true
+                }
+            },
+            {
+                "query": "Show Rajesh Sharma's medical history",
+                "response": {
+                    "history": {
+                        "diagnosis": "Chronic Kidney Disease",
+                        "treatment": "Dialysis",
+                        "notes": "fatigue and nausea",
+                        "last_visit": "2026-05-01"
+                    }
+                }
+            }
+        ]
+    }
+}

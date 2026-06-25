@@ -2,34 +2,24 @@ from agents.healthcare_agent import (HealthcareAgent)
 
 agent = HealthcareAgent()
 
-# Test 1
-query = """
-My father has chronic kidney disease.
-Book a nephrologist appointment.
-Also summarize latest treatment methods.
-"""
-result = agent.run(query=query, patient_id="P001")
-print(result)
+queries = [
 
-# Test 2
-result = agent.run(query="Show patient history",patient_id="P001")
-print(result)
+    "Book a nephrologist appointment for Rajesh Sharma",
 
-# Task 3
-result = agent.run(
-query="""
-    Update patient record.
-    Add fatigue and nausea.
-    """,
-    patient_id="P001"
-)
-print(result)
+    "Summarize latest treatment methods for chronic kidney disease",
 
-# Task 4
-query = """
-Retrieve patient history.
-Book a nephrologist appointment.
-Summarize CKD treatment methods.
-"""
-result = agent.run(query=query,patient_id="P001")
-print(result)
+    "Update Rajesh Sharma record with fatigue and nausea",
+
+    "Show Rajesh Sharma's medical history"
+]
+
+for query in queries:
+
+    plan = agent.run(query, "P001")
+
+    print("\nQUERY:")
+    print(query)
+
+    print("\nPLAN:")
+    print(plan)
+

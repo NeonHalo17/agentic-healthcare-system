@@ -24,6 +24,13 @@ Available tasks:
 - search_medical_information
 - update_patient_record
 
+Extract:
+
+- doctor_specialty
+- disease_name
+- patient_name
+- update_note
+
 Doctor specialties that may appear:
 - Nephrologist
 - Cardiologist
@@ -49,7 +56,57 @@ Expected JSON Schema:
 {{
     "tasks": [],
     "doctor_specialty": null,
-    "update_note": null 
+    "disease_name": null,
+    "patient_name": null,
+    "update_note": null
+}}
+
+Example 1
+
+User:
+Book a nephrologist appointment for Rajesh Sharma.
+
+Output:
+
+{{
+    "tasks": [
+        "book_appointment"
+    ],
+    "doctor_specialty": "Nephrologist",
+    "disease_name": null,
+    "update_note": null
+}}
+
+Example 2
+
+User:
+Summarize latest treatment options for chronic kidney disease.
+
+Output:
+
+{{
+    "tasks": [
+        "search_medical_information"
+    ],
+    "doctor_specialty": null,
+    "disease_name": "Chronic Kidney Disease",
+    "update_note": null
+}}
+
+Example 3
+
+User:
+Update Rajesh Sharma's record with fatigue and nausea.
+
+Output:
+
+{{
+    "tasks": [
+        "update_patient_record"
+    ],
+    "doctor_specialty": null,
+    "disease_name": null,
+    "update_note": "fatigue and nausea"
 }}
 """
         # Get response from the llm
