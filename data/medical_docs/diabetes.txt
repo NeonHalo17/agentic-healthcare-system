@@ -1,0 +1,37 @@
+Disease: Type 2 Diabetes Mellitus
+
+Overview:
+Type 2 Diabetes is a chronic disease in which the body becomes resistant to insulin or does not produce enough insulin.
+
+Symptoms:
+- Increased thirst
+- Frequent urination
+- Increased hunger
+- Fatigue
+- Blurred vision
+- Slow wound healing
+- Weight changes
+
+Risk Factors:
+- Obesity
+- Sedentary lifestyle
+- Family history
+- Age over 45
+- Hypertension
+
+Diagnosis:
+- Fasting blood glucose
+- HbA1c
+- Oral glucose tolerance test
+
+Treatment:
+- Lifestyle modification
+- Metformin
+- GLP-1 receptor agonists
+- Insulin when required
+
+Lifestyle Recommendations:
+- Regular exercise
+- Healthy diet
+- Weight management
+- Blood sugar monitoring

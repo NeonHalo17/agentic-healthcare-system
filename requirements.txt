@@ -2,3 +2,5 @@ langchain
 langchain-ollama
 ollama
 pydantic
+sentence-transformers
+faiss-cpu

@@ -1,0 +1,35 @@
+Disease: Asthma
+
+Overview:
+Asthma is a chronic inflammatory disease of the airways causing reversible airflow obstruction.
+
+Symptoms:
+- Wheezing
+- Persistent cough
+- Chest tightness
+- Shortness of breath
+- Night-time coughing
+
+Risk Factors:
+- Allergies
+- Family history
+- Air pollution
+- Smoking
+- Respiratory infections
+
+Diagnosis:
+- Spirometry
+- Peak flow measurement
+- Bronchodilator response test
+
+Treatment:
+- Inhaled corticosteroids
+- Short-acting bronchodilators
+- Long-acting bronchodilators
+- Leukotriene receptor antagonists
+
+Lifestyle Recommendations:
+- Avoid allergens
+- Carry rescue inhaler
+- Follow asthma action plan
+- Regular medical follow-up

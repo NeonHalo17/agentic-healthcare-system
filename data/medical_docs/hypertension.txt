@@ -1,0 +1,35 @@
+Disease: Hypertension
+
+Overview:
+Hypertension is persistently elevated blood pressure that increases the risk of cardiovascular disease.
+
+Symptoms:
+- Often no symptoms
+- Headaches
+- Dizziness
+- Blurred vision
+- Chest pain (severe cases)
+- Shortness of breath
+
+Risk Factors:
+- High salt diet
+- Obesity
+- Smoking
+- Alcohol consumption
+- Family history
+
+Diagnosis:
+- Blood pressure measurement
+- Ambulatory blood pressure monitoring
+
+Treatment:
+- ACE inhibitors
+- Calcium channel blockers
+- Diuretics
+- Beta blockers
+
+Lifestyle Recommendations:
+- Reduce salt intake
+- Exercise regularly
+- Lose excess weight
+- Stop smoking

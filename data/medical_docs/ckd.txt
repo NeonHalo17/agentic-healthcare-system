@@ -1,0 +1,40 @@
+Disease: Chronic Kidney Disease (CKD)
+
+Overview:
+Chronic Kidney Disease is a gradual loss of kidney function over time. It can progress to kidney failure if left untreated.
+
+Symptoms:
+- Fatigue
+- Swelling in the legs and ankles
+- High blood pressure
+- Loss of appetite
+- Nausea
+- Decreased urine output
+- Muscle cramps
+
+Risk Factors:
+- Diabetes
+- Hypertension
+- Family history of kidney disease
+- Smoking
+- Obesity
+
+Diagnosis:
+- Blood creatinine test
+- eGFR
+- Urine protein test
+- Kidney ultrasound
+
+Treatment:
+- Blood pressure control
+- ACE inhibitors or ARBs
+- Blood sugar management
+- Low protein diet
+- Dialysis in advanced stages
+- Kidney transplantation
+
+Lifestyle Recommendations:
+- Reduce salt intake
+- Exercise regularly
+- Stay hydrated
+- Avoid smoking
