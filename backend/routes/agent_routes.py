@@ -12,7 +12,5 @@ router = APIRouter(prefix="/agent",tags=["Healthcare Agent"])
 # POST endpoint for user query, entry point of our application
 @router.post("/query")
 def query(request: QueryRequest,agent: HealthcareAgent = Depends(get_agent)):
-    print("REQUEST:", request)
-    result = agent.run(query=request.query, patient_id=request.patient_id, session_id=request.session_id)
-    print("RESULT:", result)
+    result = agent.run(query=request.query, session_id=request.session_id)
     return result

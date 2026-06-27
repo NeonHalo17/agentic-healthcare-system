@@ -1,4 +1,4 @@
-from rag.patient_summary_manager import PatientSummaryManager
+from rag.patient_record_loader import PatientSummaryManager
 from rag.rag_manager import RAGManager
 
 # Build Patient Summary instance

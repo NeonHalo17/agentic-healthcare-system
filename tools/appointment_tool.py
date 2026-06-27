@@ -54,14 +54,14 @@ class AppointmentTool:
         return slots
 
     # Get list of patient appointments
-    def get_patient_appointments(self, patient_id):
+    def get_patient_appointments(self, patient_name):
         # Load appointments data
         appointments = self._load_appointments()
         # Return list of appointments under the passed patient_id
-        return [appt for appt in appointments if appt["patient_id"] == patient_id]
+        return [appt for appt in appointments if appt["patient_id"] == patient_name]
 
     # Define method to book appointments
-    def book_appointment(self, patient_id, doctor_id, slot):
+    def book_appointment(self, patient_name, doctor_id, slot):
         # Load doctors data
         doctors = self._load_doctors()
         doctor_found = None
@@ -99,7 +99,7 @@ class AppointmentTool:
         # Write up an appointment record as is expected from the appointment database
         appointment = {
             "appointment_id": f"A{len(appointments)+1:03d}",
-            "patient_id": patient_id,
+            "patient_name": patient_name,
             "doctor_id": doctor_id,
             "appointment_date": slot,
             "status": "Scheduled"
@@ -119,7 +119,7 @@ class AppointmentTool:
         }
         
     # We have created a book_appointment method, but to automate it we need to create an auto_booking method
-    def auto_book_appointment(self, patient_id, specialty, preferred_slot=None):
+    def auto_book_appointment(self, patient_name, specialty, preferred_slot=None):
         
         # Get available slots
         slots = self.get_available_slots(specialty)
@@ -135,10 +135,10 @@ class AppointmentTool:
         if preferred_slot:
             for slot in slots:
                 if slot["slot"] == preferred_slot:
-                    return self.book_appointment(patient_id, slot["doctor_id"], slot["slot"])
+                    return self.book_appointment(patient_name, slot["doctor_id"], slot["slot"])
             
         # Otherwise book earliest available
         # No matter what happens, if slots are available, a slot under the doctor_specialty will be booked, this makes it autonomous
         first_slot = slots[0]
-        return self.book_appointment(patient_id, first_slot["doctor_id"], first_slot["slot"])
+        return self.book_appointment(patient_name, first_slot["doctor_id"], first_slot["slot"])
     

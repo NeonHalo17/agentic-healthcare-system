@@ -1,0 +1,24 @@
+[ 
+    { 
+        "question": "What is Rajesh Sharma's diagnosis?", 
+        "reference": "Rajesh Sharma has Chronic Kidney Disease." 
+    }, 
+    { 
+        "question": "What treatment is Rajesh Sharma receiving?", 
+        "reference": "Rajesh Sharma is currently receiving Dialysis." 
+    }, 
+    { 
+        "question": "What allergies does Rajesh Sharma have?", 
+        "reference": "Rajesh Sharma is allergic to Penicillin." 
+    }, 
+    { 
+        "question": "Summarize Rajesh Sharma's medical history.", 
+        "reference": "Rajesh Sharma has Chronic Kidney Disease and is receiving Dialysis." 
+    }, { 
+        "question": "What are the symptoms of Chronic Kidney Disease?", 
+        "reference": "Symptoms include fatigue, swelling, nausea, vomiting, reduced urine output and loss of appetite." 
+    }, { 
+        "question": "Book an appointment with a nephrologist.", 
+        "reference": "The appointment has been booked successfully." 
+    } 
+]  

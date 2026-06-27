@@ -25,7 +25,6 @@ class RAGManager:
         self.index = faiss.IndexFlatL2(dimension)
         # Add generated embeddings to the FAISS index
         self.index.add(embeddings)
-        print(f"Indexed {len(documents)} documents.")
 
     # Search documents based on query and return top_k relevant documents
     def search(self, query, top_k=3):

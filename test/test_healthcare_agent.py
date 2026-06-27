@@ -6,17 +6,16 @@ queries = [
 
     # "Book a nephrologist appointment for Rajesh Sharma",
 
-    # "Summarize latest treatment methods for chronic kidney disease",
+    "What is David Thompson's medication?",
 
     # "Update Rajesh Sharma record with fatigue and nausea",
 
     # "Show Rajesh Sharma's medical history"
-    "What is Rajesh Sharma's Diagnosis"
 ]
 
 for query in queries:
 
-    plan = agent.run(query, "P001")
+    plan = agent.run(query, "David Thompson")
 
     print("\nQUERY:")
     print(query)

@@ -4,5 +4,4 @@ from pydantic import BaseModel
 class QueryRequest(BaseModel):
 
     session_id: str
-    patient_id: str | None = None
     query: str

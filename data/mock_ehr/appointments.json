@@ -40,5 +40,12 @@
         "doctor_id": "D001",
         "appointment_date": "2026-06-25 14:00",
         "status": "Scheduled"
+    },
+    {
+        "appointment_id": "A007",
+        "patient_name": "David Thompson",
+        "doctor_id": "D001",
+        "appointment_date": "2026-06-25 10:00",
+        "status": "Scheduled"
     }
 ]

@@ -3,9 +3,7 @@
         "doctor_id": "D001",
         "name": "Dr. Anil Gupta",
         "specialty": "Nephrologist",
-        "available_slots": [
-            "2026-06-25 10:00"
-        ]
+        "available_slots": []
     },
     {
         "doctor_id": "D002",
