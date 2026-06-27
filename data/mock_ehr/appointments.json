@@ -33,5 +33,12 @@
         "doctor_id": "D003",
         "appointment_date": "2026-06-28 10:30",
         "status": "Scheduled"
+    },
+    {
+        "appointment_id": "A006",
+        "patient_id": "P001",
+        "doctor_id": "D001",
+        "appointment_date": "2026-06-25 14:00",
+        "status": "Scheduled"
     }
 ]

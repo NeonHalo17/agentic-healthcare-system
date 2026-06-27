@@ -4,13 +4,14 @@ agent = HealthcareAgent()
 
 queries = [
 
-    "Book a nephrologist appointment for Rajesh Sharma",
+    # "Book a nephrologist appointment for Rajesh Sharma",
 
-    "Summarize latest treatment methods for chronic kidney disease",
+    # "Summarize latest treatment methods for chronic kidney disease",
 
-    "Update Rajesh Sharma record with fatigue and nausea",
+    # "Update Rajesh Sharma record with fatigue and nausea",
 
-    "Show Rajesh Sharma's medical history"
+    # "Show Rajesh Sharma's medical history"
+    "What is Rajesh Sharma's Diagnosis"
 ]
 
 for query in queries:

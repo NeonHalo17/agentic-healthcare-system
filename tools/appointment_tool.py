@@ -6,13 +6,8 @@ class AppointmentTool:
 
     # Define initilization method, called when object is created
     def __init__(self):
-        root = (
-            Path(__file__)
-            .resolve()
-            .parent.parent
-            / "data"
-            / "mock_ehr"
-        )
+        root = (Path(__file__).resolve().parent.parent/ "data"/ "mock_ehr")
+        
         # load the data paths into two attributes of this class
         self.doctors_file = root / "doctors.json"
         self.appointments_file = root / "appointments.json"
@@ -34,12 +29,7 @@ class AppointmentTool:
         # Load doctors data
         doctors = self._load_doctors()
         # Return list of doctors with required speciality
-        return [
-            doctor
-            for doctor in doctors
-            if doctor["specialty"].lower()
-            == specialty.lower()
-        ]
+        return [doctor for doctor in doctors if doctor["specialty"].lower() == specialty.lower()]
 
     # Get all available slots of the required specialized doctors
     def get_available_slots(self, specialty):
@@ -68,11 +58,7 @@ class AppointmentTool:
         # Load appointments data
         appointments = self._load_appointments()
         # Return list of appointments under the passed patient_id
-        return [
-            appt
-            for appt in appointments
-            if appt["patient_id"] == patient_id
-        ]
+        return [appt for appt in appointments if appt["patient_id"] == patient_id]
 
     # Define method to book appointments
     def book_appointment(self, patient_id, doctor_id, slot):
@@ -101,18 +87,15 @@ class AppointmentTool:
             }
             
         # Remove booked slot from the doctor
-        doctor_found["available_slots"].remove(
-            slot
-        )
+        doctor_found["available_slots"].remove(slot
+                                               )
         # Save updated doctors.json
         with open(self.doctors_file, "w") as f:
-            json.dump(
-                doctors,
-                f,
-                indent=4
-            )
+            json.dump(doctors, f, indent=4)
+            
         # Load appointments data
         appointments = self._load_appointments()
+        
         # Write up an appointment record as is expected from the appointment database
         appointment = {
             "appointment_id": f"A{len(appointments)+1:03d}",
@@ -121,18 +104,41 @@ class AppointmentTool:
             "appointment_date": slot,
             "status": "Scheduled"
         }
+        
         # Add the record to the appointments data
         appointments.append(appointment)
 
         # Update the appointments.json file to reflect data updation
         with open(self.appointments_file,"w") as f:
-            json.dump(
-                appointments,
-                f,
-                indent=4
-            )
+            json.dump(appointments, f,  indent=4)
+            
         # Return appropriate message, with appointment details post success
         return {
             "status": "success",
             "appointment": appointment
         }
+        
+    # We have created a book_appointment method, but to automate it we need to create an auto_booking method
+    def auto_book_appointment(self, patient_id, specialty, preferred_slot=None):
+        
+        # Get available slots
+        slots = self.get_available_slots(specialty)
+
+        # Return error message if no slots available
+        if not slots:
+            return {
+                "status": "failed",
+                "message": f"No {specialty} appointments available."
+            }
+            
+        # Try preferred slot first
+        if preferred_slot:
+            for slot in slots:
+                if slot["slot"] == preferred_slot:
+                    return self.book_appointment(patient_id, slot["doctor_id"], slot["slot"])
+            
+        # Otherwise book earliest available
+        # No matter what happens, if slots are available, a slot under the doctor_specialty will be booked, this makes it autonomous
+        first_slot = slots[0]
+        return self.book_appointment(patient_id, first_slot["doctor_id"], first_slot["slot"])
+    

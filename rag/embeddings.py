@@ -1,5 +1,4 @@
-from sentence_transformers import SentenceTransformer
-
+from config.embedding_config import get_embedding_model
 
 class EmbeddingModel:
     """
@@ -8,9 +7,7 @@ class EmbeddingModel:
     """
     # Initialization function
     def __init__(self):
-        self.model = SentenceTransformer(
-            "all-MiniLM-L6-v2" # 
-        )
+        self.model = get_embedding_model() # Initialize embedding model 
 
     # Generate embeddings for just a piece of text
     def embed(self, text: str):
